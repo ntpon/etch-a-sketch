@@ -1,14 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Etch A Sketch</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" />
     <script src="./app.js" defer></script>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <header>
+      <h1 class="text-center text-header">Etch a Sketch</h1>
+      <p class="text-center" id="txt-size">16 x 16</p>
+    </header>
+    <main>
+      <div class="container">
+        <div class="layout">
+          <div class="grid-container" id="grid-container"></div>
+          <div class="btn-conatiner">
+            <button class="btn" id="btn-resize">Resize</button>
+            <button class="btn" id="btn-reset">Reset</button>
+            <button class="btn" id="btn-random-color">Random Colors</button>
+            <button class="btn" id="btn-color-black">Black</button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>

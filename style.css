@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@400;700&family=Supermercado+One&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Baloo Chettan 2', cursive;
+}
+
+body {
+  background-color: #24292e;
+  color: white;
+}
+.text-center {
+  text-align: center;
+}
+
+.text-header {
+  text-transform: uppercase;
+  font-size: 36px;
+  margin-top: 10px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#grid-container {
+  display: grid;
+  width: 500px;
+  height: 500px;
+  grid-template-columns: repeat(16, auto);
+  border: 5px solid black;
+}
+
+.grid-item {
+  border: 1px solid rgb(247, 247, 247);
+  background-color: white;
+  color: red;
+}
+
+.layout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.btn-conatiner {
+  display: block;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.btn {
+  font-weight: 400;
+  color: black;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  background-color: white;
+  border: 1px solid green;
+  margin: 5px;
+  padding: 10px 15px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  min-width: 150px;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: green;
+  color: white;
+}
