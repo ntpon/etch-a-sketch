@@ -19,8 +19,10 @@ function createGridItem(num) {
   }
 }
 function getColor() {
-  if (IS_RANDOM_COLOR)
-    return '#' + (((1 << 24) * Math.random()) | 0).toString(16);
+  if (IS_RANDOM_COLOR) {
+    const rgb = [Math.random() * 256, Math.random() * 256, Math.random() * 256];
+    return `rgb(${rgb.join(',')})`;
+  }
   return COLOR_DIV;
 }
 
